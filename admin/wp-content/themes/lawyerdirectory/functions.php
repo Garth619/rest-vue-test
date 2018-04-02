@@ -191,39 +191,3 @@ function cc_mime_types($mimes)
 
 add_filter('upload_mimes', 'cc_mime_types');
 
-
-
-	
-  
-  add_action('init', 'lawyerfirm');    
-   	 
-	function lawyerfirm() {    
-    	$args = array(    
-        	'label' => __('Lawyer Firms'),    
-        	'singular_label' => __('Lawyer Firm'),    
-        	'public' => true,    
-        	'show_ui' => true,
-        	'show_in_rest' => true,
-        	'has_archive' => true,	 
-        	'capability_type' => 'post',    
-        	'hierarchical' => false,    
-        	'rewrite' => true,    
-        	'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )    
-       	);    
-   	 
-    	register_post_type( 'lawyerfirm' , $args );    
-	}    
-
-register_taxonomy("lawyerfirm-type", array("lawyerfirm"), array(
-
-	"hierarchical" => true, 
-	"label" => "Lawyer Firm Types", 
-	"singular_label" => "Lawyer Firm Type", 
-	"rewrite" => true,
-	'show_in_rest' => true
-	
-));  
-
-
-
-
