@@ -12,7 +12,9 @@
 
 <body>
 
-Wordpress Template
+
+
+	Wordpress Template
 
 
 <?php wp_footer(); ?>
