@@ -1,4 +1,4 @@
-# lawyer-directory
+# lawyer-spa
 
 > A Vue.js project
 
