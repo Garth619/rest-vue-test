@@ -3,7 +3,9 @@
     
     <div v-for="pos in posts">
 
-      <h1>{{pos.title.rendered}}</h1>
+      <h1 v-html="pos.title.rendered"></h1>
+
+      <p v-html="pos.content.rendered"></p>
 
     </div>
 
