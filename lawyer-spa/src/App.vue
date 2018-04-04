@@ -8,16 +8,14 @@
         <button id="btn" class="" v-on:click="getJokes">Get Jokes</button>
 
         <div v-if="loading">
-          <img src="../src/assets/logo.png"/>
-          Loading.....
+          <!-- Loading..... -->
         </div>
 
       <div class="wrapper">
         <div class="row">
           <div v-for="joke in jokes" :key="joke.id">
-          <div class="col-md-4 cards">
-             <img src="https://placeimg.com/300/300/nature" class="img-responsive" alt="Random images placeholder"> 
-            <div>
+          <div>
+             <div>
               <h3>{{ joke.id }}</h3>
               <p>{{ joke.joke }}</p>
               <p>{{ joke.category }}</p>
