@@ -11,9 +11,19 @@
 
        <p>{{field.name}}</p>
 
+      <p>{{field.position}}</p>
+
      </div>
 
+    
+    <div v-for="cat in pos.lawfirmcat" :key="cat.id">
+
+      {{cat}}
+      
     </div>
+
+
+  </div>
 
   </div>
 </template>
@@ -36,7 +46,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {
   font-weight: normal;

@@ -40,7 +40,7 @@ add_theme_support('post-thumbnails');
 	
 	  
 	register_taxonomy(
-		"lawfirm-cat", 
+		"lawfirmcat", 
 		array("lawfirm"),
 		array(
 			"hierarchical" => true,
