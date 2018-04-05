@@ -1,11 +1,17 @@
 <template>
   <div class="hello">
     
-    <div v-for="pos in posts">
+    <div v-for="pos in posts" :key="pos.id">
 
       <h1 v-html="pos.title.rendered"></h1>
 
       <p v-html="pos.content.rendered"></p>
+
+     <div v-for="field in pos.acf.attorneys" :key="field.id">
+
+       <p>{{field.name}}</p>
+
+     </div>
 
     </div>
 
@@ -25,13 +31,7 @@ export default {
     }
   },
   created:function() {
-    axios.get('http://lawyers-test.com/wordpress/wp-json/wp/v2/lawfirm').then(response => {
-
-      for(let post in response.data) {
-        this.posts.push(response.data[post]);
-      }
-
-    });
+    axios.get('http://lawyers-test.com/wordpress/wp-json/wp/v2/lawfirm').then(response => this.posts = response.data);
   }
 }
 </script>
