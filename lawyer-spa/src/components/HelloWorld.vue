@@ -25,7 +25,13 @@
 
   </div>
 
-  </div>
+  <div class="errors" v-for="error of errors" :key="error.id">
+
+    {{error.message}}
+  
+  </div><!-- errors -->
+
+  </div><!-- hello -->
 </template>
 
 <script>
@@ -37,11 +43,18 @@ export default {
   data () {
     return {
       // msg: 'Welcome to Your Vue.js App',
-      posts: []
+      posts: [],
+      errors:[]
     }
   },
   created:function() {
-    axios.get('http://lawyers-test.com/wordpress/wp-json/wp/v2/lawfirm').then(response => this.posts = response.data);
+    axios.get('http://lawyers-test.com/wordpress/wp-json/wp/v2/lawfirm')
+    .then(response => {
+      this.posts = response.data
+    })
+    .catch(e => {
+      this.errors.push(e)
+    })
   }
 }
 </script>
