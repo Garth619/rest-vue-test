@@ -31,9 +31,6 @@
   
   </div><!-- errors -->
 
-
-  <router-link to="/garrett">Go to another page</router-link>
-
   </div><!-- hello -->
 </template>
 
