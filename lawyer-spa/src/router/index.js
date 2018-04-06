@@ -14,7 +14,7 @@ export default new Router({
     },
     {
       path: '/anotherpage',
-      name: 'Anpther Page',
+      name: 'Another Page',
       component: AnotherPage
     }
   ]

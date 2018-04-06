@@ -3,7 +3,7 @@
     <img src="./assets/logo.png">
 
   <div class="nav">
-    <router-link :to="{ name: 'HelloWorld' }">Home</router-link>
+    <router-link to="/">Home</router-link>
     <router-link to="/anotherpage">Another Page</router-link>
   </div><!-- nav -->
 
