@@ -46,7 +46,7 @@ export default {
       errors:[]
     }
   },
-  created:function() {
+  created() {
     axios.get('http://lawyers-test.com/wordpress/wp-json/wp/v2/lawfirm')
     .then(response => {
       this.posts = response.data

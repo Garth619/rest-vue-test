@@ -5,7 +5,9 @@
   <div class="nav">
     <router-link to="/">Home</router-link>
     <router-link to="/anotherpage">Another Page</router-link>
+    <router-link to="/firstroute/lawfirmscat">First Route</router-link>
   </div><!-- nav -->
+
 
     <router-view/>
   </div>

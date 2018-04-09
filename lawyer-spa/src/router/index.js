@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import AnotherPage from '@/components/AnotherPage'
+import FirstRoute from '@/components/FirstRoute'
 
 Vue.use(Router)
 
@@ -18,8 +19,8 @@ export default new Router({
       component: AnotherPage
     },
     {
-      path: '/firstroute',
-      name: 'First Route',
+      path: '/firstroute/:categories',
+      name: 'FirstRoute',
       component: FirstRoute
     }
   ]
