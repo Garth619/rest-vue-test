@@ -19,10 +19,12 @@
 
       <ul>
         <li><a href="">City</a></li>
-        <li><a href="">City</a></li>
-        <li><a href="">City</a></li>
-        <li><a href="">City</a></li>
-        <li><a href="">City</a></li>
+        <li><a href="">Practice Areas</a></li>
+        <li><a href="">Attorneys</a></li>
+        <li><a href="">State</a></li>
+        <li><a href="">County</a></li>
+        
+        <li><a href=""></a></li>
       </ul>
     
     </div><!-- browse_wrapper -->
@@ -57,7 +59,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 #main_search {
   height:100vh;
@@ -72,9 +74,14 @@ export default {
 }
 
 .browse_wrapper {
-  margin:90px 0 0;
+  margin:120px 0 0;
   ul {
-    list-style: none;
+    list-style:none;
+    margin:20px 0 0;
+    li {
+      display: inline-block;
+      margin:0 10px;
+    }
   }
 }
 
