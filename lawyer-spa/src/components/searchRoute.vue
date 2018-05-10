@@ -69,9 +69,7 @@ export default {
   align-items: center;
 }
 
-.main_search_wrapper {
- 
-}
+
 
 .browse_wrapper {
   margin:120px 0 0;
