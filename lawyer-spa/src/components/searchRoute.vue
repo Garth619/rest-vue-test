@@ -15,7 +15,7 @@
 
     <div class="browse_wrapper">
       
-      <span>Browse</span>
+      <span>Browse by:</span>
 
       <ul>
         <li><a href="">City</a></li>
