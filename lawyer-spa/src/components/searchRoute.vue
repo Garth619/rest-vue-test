@@ -47,7 +47,7 @@ export default {
     }
   },
   created() {
-    axios.get('http://lawyers-test.com/wordpress/wp-json/wp/v2/lawfirm')
+    axios.get('http://lawyers-test.com/wp-json/wp/v2/lawfirm')
     .then(response => {
       this.posts = response.data
     })

@@ -23,7 +23,7 @@ import axios from 'axios';
     }
   },
   created:function() {
-    axios.get('http://lawyers-test.com/wordpress/wp-json/wp/v2/pages/10')
+    axios.get('http://lawyers-test.com/wp-json/wp/v2/pages/10')
     .then(response => {
       this.page = response.data
     })
