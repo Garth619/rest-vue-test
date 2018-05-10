@@ -47,7 +47,7 @@ export default {
     }
   },
   created() {
-    axios.get('http://lawyers-test.com/wp-json/wp/v2/lawfirm?search=Garrett+Cullen')
+    axios.get('http://lawyers-test.com/wp-json/wp/v2/lawfirm?search=Garrett')
     .then(response => {
       this.posts = response.data
     })
