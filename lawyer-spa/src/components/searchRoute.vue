@@ -62,12 +62,20 @@ export default {
 #main_search {
   height:100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .main_search_wrapper {
-  /* margin:0px 0; */
+ 
+}
+
+.browse_wrapper {
+  margin:90px 0 0;
+  ul {
+    list-style: none;
+  }
 }
 
 
