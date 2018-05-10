@@ -1,37 +1,22 @@
 <template>
-  <div class="hello">
+  <div class="search">
     
-    <div v-for="pos in posts" :key="pos.id">
+    <section id="main_search">
 
-      <h1 v-html="pos.title.rendered"></h1>
+      <div class="main_search_wrapper">
 
-      <p v-html="pos.content.rendered"></p>
-
-     <div v-for="field in pos.acf.attorneys" :key="field.id">
-
-       <p>{{field.name}}</p>
-
-      <p>{{field.position}}</p>
-
-     </div>
-
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit">Search</button>
+      </form>
     
-    <div v-for="cat in pos.lawfirmcat" :key="cat.id">
+    </div><!-- main_search_wrapper -->
 
-      {{cat}}
-      
-    </div>
+    </section><!-- main_search -->
 
-
-  </div>
-
-  <div class="errors" v-for="error of errors" :key="error.id">
-
-    {{error.message}}
   
-  </div><!-- errors -->
-
-  </div><!-- hello -->
+  </div><!-- search -->
 </template>
 
 <script>
@@ -39,7 +24,7 @@
 import axios from 'axios';
 
 export default {
-  name: 'HelloWorld',
+  name: 'SearchRoute',
   data () {
     return {
       posts: [],
@@ -59,6 +44,19 @@ export default {
 </script>
 
 <style scoped>
+
+#main_search {
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_search_wrapper {
+  /* margin:0px 0; */
+}
+
+
 h1, h2 {
   font-weight: normal;
 }
