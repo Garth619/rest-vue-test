@@ -8,7 +8,7 @@
 	  </div>
 
       <div class="main_search_wrapper">
-
+        
           <input v-model="term" type="search">
           <button @click="search">Search</button>
       
@@ -47,9 +47,7 @@
 
      <div v-for="field in pos.acf.attorneys" :key="field.id">
 
-       <p>{{field.name}}</p>
-
-      <p>{{field.position}}</p>
+       <p>{{field.attorney_name}}</p>
 
      </div>
 
