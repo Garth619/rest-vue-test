@@ -1,13 +1,21 @@
- <template v-if="page">
- 
-   <div class="anotherpage" v-if="page && page != ''" :key="page.id">
+ <template>
+  <div>
+<ais-index
+    app-id="latency"
+    api-key="3d9875e51fbd20c7754e65422f7ce5e1"
+    index-name="bestbuy"
+  >
+    <ais-search-box></ais-search-box>
+    <ais-results>
+      <template slot-scope="{ result }">
+        <h2>
+          <ais-highlight :result="result" attribute-name="name"></ais-highlight>
+        </h2>
+      </template>
+    </ais-results>
+  </ais-index>
 
-        <h1>{{page.title.rendered}}</h1>
-
-        <div class="page_content" v-html="page.content.rendered"></div>
-
-    </div><!-- anotherpage -->
-
+  </div>
 </template>
 
  <script>
