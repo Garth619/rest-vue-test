@@ -9,7 +9,9 @@
 
       <div class="main_search_wrapper">
         
+          
           <input v-model="term" type="search">
+          <input v-model="termtwo" type="search">
           <button @click="search">Search</button>
       
       </div><!-- main_search_wrapper -->
@@ -80,6 +82,7 @@ export default {
   data () {
     return {
       term:[],
+      termtwo:[],
       posts: [],
       errors:[],
       noResults:false,
