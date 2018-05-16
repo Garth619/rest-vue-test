@@ -2,16 +2,19 @@
   <div class="search">
 
     <ais-index
-    app-id="latency"
-    api-key="3d9875e51fbd20c7754e65422f7ce5e1"
-    index-name="bestbuy"
+    app-id="2J8AZGPKXS"
+    api-key="ff8cae4a798729b8a1fd90dfb0f95add"
+    index-name="wp_posts_lawfirm"
   >
     <ais-search-box></ais-search-box>
     <ais-results>
       <template slot-scope="{ result }">
-        <h2>
+
+            {{result.post_title}}
+
+        <!-- <h2>
           <ais-highlight :result="result" attribute-name="name"></ais-highlight>
-        </h2>
+        </h2> -->
       </template>
     </ais-results>
   </ais-index>
